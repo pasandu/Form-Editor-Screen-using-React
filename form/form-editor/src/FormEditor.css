@@ -1,0 +1,102 @@
+/* Custom styles for the FormEditor component */
+
+/* Flex container */
+.form-editor {
+  display: flex;
+  height: 100vh;
+  background-color: #f3f4f6; /* Equivalent to Tailwind's bg-gray-100 */
+}
+
+/* Left Sidebar - Form Fields */
+.form-sidebar {
+  width: 25%;
+  background-color: white;
+  padding: 16px;
+  overflow-y: auto;
+  border-right: 1px solid #e5e7eb; /* Equivalent to Tailwind's border-gray-200 */
+}
+
+.form-sidebar h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.form-sidebar button {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+  text-align: left;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.form-sidebar button:hover {
+  background-color: #f9fafb;
+}
+
+.form-sidebar .add-field-btn {
+  background-color: #3b82f6; /* Equivalent to Tailwind's bg-blue-500 */
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.form-sidebar .add-field-btn:hover {
+  background-color: #2563eb; /* Equivalent to Tailwind's bg-blue-600 */
+}
+
+/* Middle - Canvas Preview */
+.canvas-preview {
+  width: 50%;
+  padding: 16px;
+  overflow-y: auto;
+  border-left: 1px solid #e5e7eb;
+  border-right: 1px solid #e5e7eb;
+}
+
+.canvas-preview h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.field-preview {
+  background-color: white;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+/* Right Sidebar - Field Editor */
+.field-editor {
+  width: 25%;
+  background-color: white;
+  padding: 16px;
+  overflow-y: auto;
+  border-left: 1px solid #e5e7eb;
+}
+
+.field-editor h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.field-editor label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.field-editor input,
+.field-editor textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+  border: 1px solid #d1d5db; /* Equivalent to Tailwind's border-gray-300 */
+  border-radius: 8px;
+}
